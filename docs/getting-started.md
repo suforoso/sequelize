@@ -32,6 +32,9 @@ Sequelize will setup a connection pool on initialization so you should ideally o
 const sequelize = new Sequelize('database', 'username', 'password', {
   host: 'localhost',
   dialect: 'mysql'|'sqlite'|'postgres'|'mssql',
+  
+  // To choose a specific port for connection
+  port: 8888,
 
   pool: {
     max: 5,
